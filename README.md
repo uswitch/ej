@@ -54,9 +54,9 @@ On Ubuntu:
 
     $ sudo apt-get install haskell-platform
 
-On a Mac, you may be able to do something like:
+On a Mac:
 
-    $ brew install haskell-platform
+    $ brew install ghc cabal-install
 
 (Be prepared for a wait)
 
@@ -77,7 +77,9 @@ Finally
 and you're ready to install!
 
 ## Installation
-   
+
+    $ git clone https://github.com/uswitch/ej.git
+    $ cd ej
     $ cabal install ej.cabal
 
 which, if all goes well, will create `~/.cabal/bin/ej`. It may be a
