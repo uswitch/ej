@@ -48,42 +48,21 @@ To query EDN from the command line:
 
 ## Prerequisites
 
-* The Haskell Platform
+* The Haskell Stack
 
-On Ubuntu:
-
-    $ sudo apt-get install haskell-platform
-
-On a Mac:
-
-    $ brew install ghc cabal-install
+    $ curl -sSL https://get.haskellstack.org/ | sh
 
 (Be prepared for a wait)
-
-And then
-
-    $ cabal update
-    $ cabal install cabal
-
-(Which will either install a new version of `cabal` globally or to
-your personal `~/.cabal/bin` directory, depending on platform. `which
-cabal` and `cabal --version` to make sure. Cabal should report a
-version number >= 1.20.
-
-Finally
-
-    $ cabal install cabal-install
-
-and you're ready to install!
 
 ## Installation
 
     $ git clone https://github.com/uswitch/ej.git
     $ cd ej
-    $ cabal install ej.cabal
+    $ stack setup
+    $ stack install
 
-which, if all goes well, will create `~/.cabal/bin/ej`. It may be a
-good idea to put `~/.cabal/bin` in your `PATH`.
+which, if all goes well, will create `~/.local/bin/ej`. It may be a
+good idea to put `~/.local/bin` in your `PATH`.
 
 ## Motivation
 
